@@ -1,4 +1,5 @@
-body {   background: #FAFAFA 0% 0% no-repeat padding-box;
+body {   background: #FAFAFA
+   0% 0% no-repeat padding-box;
   }
   
  
@@ -26,6 +27,19 @@ body {   background: #FAFAFA 0% 0% no-repeat padding-box;
     
     
   }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li {
+    float: left;
+    display: inline;
+  }
+  li div{
+    display: block;
+  }
   
   .flex-item-left {
     /* background-color: #f1f1f1; */
@@ -43,3 +57,54 @@ body {   background: #FAFAFA 0% 0% no-repeat padding-box;
       flex-direction: column;
     }
   }
+
+
+
+  .header {
+   
+    background-color: #f1f1f1;
+    overflow: auto;
+  
+  }
+  .header img {
+   
+    color: black;
+     
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  .header-left{
+  float: left;
+  /* justify-content: space-around; */
+  /* offset-distance: 20px; */
+  display: flex;
+  }
+
+  .header-right {
+  float: right;
+  
+    
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+      /* float: none; */
+      display: block;
+      /* text-align: left; */
+    }
+    
+    .header-right {
+      float: none;
+    }
+    .header-left{
+      float: none;
+    }
+  }
+  .box{
+    width: 100%;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  th{flood-color:aliceblue;}
